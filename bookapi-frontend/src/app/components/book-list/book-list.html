@@ -1,0 +1,38 @@
+<!-- Top Banner -->
+<div class="booklist-banner text-center">
+  <h2 class="display-5 mb-2">📚 Book List</h2>
+  <p class="lead">Easily manage your book collection</p>
+</div>
+
+<!-- Main Table Section -->
+<div class="container book-list mt-4">
+  <div class="text-end mb-3">
+    <a class="btn btn-success btn-lg" routerLink="/add">➕ Add Book</a>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover align-middle shadow">
+      <thead class="table-dark text-center">
+        <tr>
+          <th>ISBN</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Year</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody class="text-center">
+        <tr *ngFor="let book of books">
+          <td>{{ book.isbn }}</td>
+          <td>{{ book.title }}</td>
+          <td>{{ book.author }}</td>
+          <td>{{ book.publicationYear }}</td>
+          <td>
+            <button class="btn btn-primary btn-sm me-2" (click)="editBook(book.isbn)">✏️ Edit</button>
+            <button class="btn btn-danger btn-sm" (click)="confirmDelete(book.isbn)">🗑️ Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

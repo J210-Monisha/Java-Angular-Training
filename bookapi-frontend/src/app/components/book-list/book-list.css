@@ -1,0 +1,58 @@
+/* Full-width top banner */
+.booklist-banner {
+  width: 100%;
+  background: linear-gradient(to right, #3ea50a, #e8f5e9);
+  padding: 40px 20px;
+  border-bottom: 4px solid #0f5132;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  color: #010d05;
+}
+
+/* Main table section */
+.book-list {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Add Book Button */
+.book-list .btn-success {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.book-list .btn-success:hover {
+  background-color: #0a802f;
+}
+
+/* Table styling */
+.table th, .table td {
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f2f7fb;
+}
+
+/* Button Styling */
+.btn-primary, .btn-danger {
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 6px 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}

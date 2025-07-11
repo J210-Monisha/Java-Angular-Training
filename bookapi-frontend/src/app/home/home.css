@@ -1,0 +1,37 @@
+/* Intro Banner */
+.intro-banner {
+  width: 100%;
+  background: linear-gradient(to right, #3ea50a, #e8f5e9);
+  padding: 60px 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-bottom: 4px solid #047447;
+  color: #020b02;
+}
+
+/* Feature Section */
+.feature-section {
+  max-width: 1200px;
+}
+
+/* Image Box */
+.image-box img {
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(57, 205, 81, 0.2);
+}
+
+/* Feature List */
+.features-list {
+  max-width: 500px;
+}
+
+/* Buttons Styling */
+.btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+
+
+  
+  
