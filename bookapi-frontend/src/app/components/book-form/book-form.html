@@ -1,0 +1,30 @@
+<!-- book-form.component.html -->
+<div class="container mt-4">
+  <h2 class="text-center">{{ isEdit ? '✏️ Edit Book' : '➕ Add Book' }}</h2>
+  <form (ngSubmit)="save()" class="mt-3">
+
+    <div class="mb-3">
+      <label>ISBN:</label>
+      <input class="form-control" [(ngModel)]="books.isbn" name="isbn" [readonly]="isEdit" required />
+    </div>
+
+    <div class="mb-3">
+      <label>Title:</label>
+      <input class="form-control" [(ngModel)]="books.title" name="title" required />
+    </div>
+
+    <div class="mb-3">
+      <label>Author:</label>
+      <input class="form-control" [(ngModel)]="books.author" name="author" required />
+    </div>
+
+    <div class="mb-3">
+      <label>Year:</label>
+      <input type="number" class="form-control" [(ngModel)]="books.publicationYear" name="year" required />
+    </div>
+
+    <button class="btn btn-primary" type="submit">{{ isEdit ? 'Update' : 'Add' }}</button>
+    <a class="btn btn-secondary ms-2" routerLink="/books">Cancel</a>
+
+  </form>
+</div>
